@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+
+table,
+td {
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.master-container {
+    padding-left: 200px;
+}
+
+.float-container {
+    float: left;
+    
+}
+
+.float-child {
+    width: 100%;
+    float: left;
+    padding: 20px;
+}  

@@ -1,0 +1,198 @@
+.container {
+    /* width:1000px; */
+    height:500px;
+    /* background-color:green; */
+    padding-top:20px;
+    padding-left:55px;
+    padding-right:15px;
+    /* margin: auto; */
+}
+
+#st-box {
+    float:left;
+}
+
+#st-in-table {
+    float: left;
+}
+
+#nd-in-table {
+    float: left;
+}
+
+#rd-in-table {
+    float: left;
+    width: 150px;
+    height: 105px;
+    background-color: peru;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+    border-radius: 15px;
+    margin-left: 40px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+#nd-box {
+    float:left;
+    width:600px;
+    height:300px;
+    background-color:white;
+    border:solid orange;
+    border-radius: 12px;
+    border-width: 5px;
+    margin-left:40px;
+}
+
+#rd-box {
+    float:left;
+    width:180px;
+    height:140px;
+    margin-left: 40px;
+}
+
+#th-box {
+    float:right;
+    width:370px;
+    height:140px;
+    margin-right: 30px;
+}
+
+#rth-box {
+    margin-top: 350px;
+    width:450px;
+    height:160px;
+    /* margin-left: 40px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px; */
+    margin-left: 450px;
+}
+
+h1 {
+    color:Green;
+}
+
+table {
+    /* border-collapse: collapse; */
+
+    /* padding: 20px; */
+    color: #588c7e;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#details {
+    /* border-collapse: collapse; */
+    /* padding: 20px; */
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    padding-left: 20px;
+}
+/* 
+#mode-details {
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    padding-left: 20px;
+} */
+
+#reg-details{
+    color: brown;
+    font-family: monospace;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-top: 10px;  
+} 
+
+#next {
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 150px;
+    align-self: center;
+    
+    border: #588c7e;
+}
+
+#next:hover {
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 150px;
+    align-self: center;
+    
+    border: #588c7e;
+}
+
+#start {
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 150px;
+    align-self: center;
+    
+    border: #588c7e;
+}
+
+#start:hover {
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 150px;
+    align-self: center;
+    
+    border: #588c7e;
+}
+
+#memory {
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: #588c7e;
+}
+
+#kernel {
+    width:250px;
+    height:160px;
+    /* margin-left: 40px; */
+    background-color: green;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    float : left;
+}
+
+#Buttons {
+    margin-left: 800px;
+    position: fixed;
+}

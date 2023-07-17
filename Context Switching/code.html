@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- CSS style to put div side by side : external css-->
+    <title>context-switching-scand-and-add</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="code.css">
+    <!-- <script type="text/babel" src="loadASM.js"></script> -->
+</head>
+
+<body>
+    <h1 style="text-align: center;">Context Switching</h1>
+
+    <div class="container">
+        <div id="st-box">
+            <table id="asmInstructions">
+
+                <tr style="color:brown;">
+                    <td> No. </td>
+                    <td> Instruction </td>
+                </tr>
+
+                <tr style="padding-top: 10px;">
+                    <td> 000. </td>
+                    <td> pushq  %rbp </td>
+                </tr>
+
+                <tr>
+                    <td> 001. </td>
+                    <td> movq  %rsp, %rbp </td>
+                </tr>
+
+                <tr>
+                    <td> 002. </td>
+                    <td> movl  $5, -8(%rbp) </td>
+                </tr>
+
+                <tr>
+                    <td> 003. </td>
+                    <td> movl  -8(%rbp), %eax </td>
+                </tr>
+
+                <tr>
+                    <td> 004. </td>
+                    <td> addl  $5, %eax </td>
+                </tr>
+
+                <tr>
+                    <td> 005. </td>
+                    <td> movl  %eax, -4(%rbp) </td>
+                </tr>
+
+                <tr>
+                    <td> 006. </td>
+                    <td> movl  -4(%rbp), %eax </td>
+                </tr>
+
+                <tr>
+                    <td> 007. </td>
+                    <td> popl %rbp </td>
+                </tr>
+
+                <tr>
+                    <td> 008. </td>
+                    <td> ret </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="nd-box">
+            <p
+                style="text-align: center; background: orange; color: White; font-size: 30px; font-family: monospace; padding-top: 10px; padding-bottom: 10px; margin-top: 0;">
+                Control Processing Unit</p>
+            <div id="st-in-table">
+                <table id="details">
+                    <tr>
+                        <td>IR</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>PC</td>
+                        <td> - </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="nd-in-table">
+                <table id="mode-details">
+                    <tr>
+                        <td>User Mode</td>
+                        <td> 0 </td>
+                    </tr>
+                    <tr>
+                        <td>Kernel Mode</td>
+                        <td> 0 </td>
+                    </tr>
+                </table>
+            </div>
+
+            
+            <div id="rd-in-table">
+                <p>ALU</p>
+            </div>
+
+            <div>
+                <table id="reg-details">
+                    <tr>
+                        <td>Registers in use</td>
+                        <td> - </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+        <div id="rd-box">
+            <table id="stack" style="border: 3px solid black; font-family:'Courier New', Courier, monospace; color: red; font-weight: 5px;">
+                <tr>
+                    <td>Machine Code</td>
+                </tr>
+                <tr>
+                    <td> Static/Global Data </td>
+                </tr>
+                <tr col-span="3">
+                    <td> Heap </td>
+                </tr>
+                <tr>
+                    <td> Stack </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="th-box">
+            <table id="PCB">
+                <tr style="background-color: brown; color: white; font-weight:bolder">
+                    <td colspan="2">TASK</td>
+                </tr>
+                <tr>
+                    <td>Process ID</td>
+                    <td> pid0 </td>
+                </tr>
+                <tr>
+                    <td>Process State</td>
+                    <td> Ready </td>
+                </tr>
+                <tr>
+                    <td>Process Priority</td>
+                    <td> ### </td>
+                </tr>
+                <tr>
+                    <td>Process Counter</td>
+                    <td> 0 </td>
+                </tr>
+                <tr>
+                    <td>reg. data</td>
+                    <td> - </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="rth-box">
+            <div id="kernel">
+                <p id="k-p" style="text-align: center; padding-top: 60px; padding-left:3px; padding-right: 3px; font-weight: bolder;"> KERNEL </p>
+            </div>
+            <div id="memory">
+                <table id="Memory">
+                    <tr>
+                        <td style="background-color: brown; color: white; font-weight:bolder">Memory</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="padding-top: 15px; padding-left: 40px;">
+            <table id="int", style="margin-left: 410px;">
+                <tr>
+                    <td style="color: brown; font-weight: bolder;">Interrupt</td>
+                    <td> - </td>
+                </tr>   
+            </table>
+        </div>
+    </div>
+
+    <div id="Buttons">
+        <button id="start" onclick="start()">Start</button>
+        <button id="next" onclick="loadNext()">Next</button>
+        
+    </div>
+
+</body>
+
+</html>

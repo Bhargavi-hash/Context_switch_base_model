@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="process.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <p style="font-size: 30px;">Context switching</p>
+    <div class="master-container">
+        <div class="float-container">
+
+            <div class="float-child">
+                <table id="details">
+                    <tr>
+                        <th colspan="2">Details</th>
+                    </tr>
+                    <tr>
+                        <td>Context Switches</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Interrupts</td>
+                        <td> - </td>
+                    </tr>
+                </table>
+                <br>
+                <!-- <button type="button" onclick="Traverse()">Traverse</button>
+                <button type="button" id="InterruptButton" onclick="Create_Hardware_INT()">H/W Interrupt</button> -->
+            </div>
+
+            <div class="float-child">
+                <table id="IO">
+                    <tr>
+                        <th colspan="2">IO</th>
+                    </tr>
+                    <tr>
+                        <td>pid</td>
+                        <td>Status</td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" id="InterruptButton" onclick="IO_done()">IO done</button>
+            </div>
+
+        </div>
+        
+        <div class="float-container">
+
+            <div class="float-child">
+                <table id="myCPU">
+                    <tr>
+                        <th colspan="4">CPU</th>
+                    </tr>
+                    <tr>
+                        <td>pid</td>
+                        <td>Status</td>
+                        <td>PC</td>
+                        <td>Execution percentage</td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" id="InterruptButton" onclick="NMI()">NMI</button>
+                <button type="button" id="InterruptButton" onclick="IO_INT()">I/O</button>
+                <button type="button" id="InterruptButton" onclick="PF_INT()">PF</button>
+            </div>
+
+            <div class="float-child">
+                <table id="ReadyPool">
+                    <tr>
+                        <th>Ready Pool</th>
+                    </tr>
+                    <tr>
+                        <td>pid</td>
+                        <td>Status</td>
+                        <td>PC</td>
+                    </tr>
+                </table>
+                <br>
+
+                <button type="button" onclick="CreateNewProcess()">Create new process</button>
+                <button type="button" onclick="To_Dispatcher()">Send To dispatcher</button>
+            </div>
+
+        </div>
+        <div class="float-container">
+            <div class="float-child">
+                <table id="dispatcher">
+                    <tr>
+                        <th>Dispatcher</th>
+                    </tr>
+                    <tr>
+                        <td>pid</td>
+                        <td>Status</td>
+                        <td>PC</td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" onclick="ToCPU()">Do Context Switch</button>
+            </div>
+            
+            <div class="float-child">
+                <table id="TerminationPool">
+                    <tr>
+                        <th>Terminated</th>
+                    </tr>
+                    <tr>
+                        <td>Process</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
