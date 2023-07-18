@@ -1,0 +1,138 @@
+.container {
+    width:100%;
+    /* height:150px; */
+    background-color:green;
+    /* padding-top:20px; */
+    /* padding-left:15px; */
+    /* padding-right:15px; */
+}
+.container2 {
+    width:100%;
+    /* height:150px; */
+    background-color:green;
+    /* padding-top:20px; */
+    /* padding-left:15px; */
+    /* padding-right:15px; */
+}
+#cpu {
+    float:left;
+    width:20%;
+    height:300px;
+    background-color:white;
+    border:solid red;
+    margin-top: 20px;
+    margin-left: 1.5%;
+}
+#memory {
+    float:left;
+    width:20%;
+    height:300px;
+    background-color:white;
+    border:solid peru;
+    margin-top: 20px;
+    margin-left: 1.5%;
+}
+#TrapHandlers {
+    float:left;
+    width:20%;
+    height:300px;
+    background-color:white;
+    border:solid rosybrown;
+    margin-top: 20px;
+    margin-left: 1.5%;
+}
+#codeMenu {
+    float:left;
+    width:20%;
+    height:300px;
+    background-color:white;
+    border:solid olive;
+    margin-top: 20px;
+    margin-left: 1.5%;
+}
+#mycpu {
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+#mymemory {
+    text-align: center;
+    font-weight: bold;
+    background-color: peru;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+#myTrapHandlers {
+    text-align: center;
+    font-weight: bold;
+    background-color: rosybrown;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+#mycodeMenu {
+    text-align: center;
+    font-weight: bold;
+    background-color: olive;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+#st-box {
+    float:left;
+    width:30%;
+    height:400px;
+    background-color:white;
+    border:solid dodgerblue;
+    margin-left: 1.5%;
+}
+#nd-box {
+    float:left;
+    width:30%;
+    height:400px;
+    background-color:white;
+    border:solid orange;
+    margin-left:3%;
+}
+#rd-box {
+    float:left;
+    width:30%;
+    height: 400px;
+    background-color:white;
+    border:solid green;
+    margin-left:3%;
+}
+#umode {
+    text-align: center;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+#hardware {
+    text-align: center;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+#kmode {
+    text-align: center;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+}

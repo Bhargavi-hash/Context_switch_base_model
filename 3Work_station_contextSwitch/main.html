@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="user_process_A.js"></script>
+</head>
+
+<body>
+    
+    <h1>Context Switching - 3 Workstation model</h1>
+    
+    <div class="container">
+        <div id="st-box">
+            <p id="umode">USER MODE PROGRAM</p>
+            <div class="load_process_A"></div>
+            <!-- <div class="umode_controls" data-commentid = "1"></div> -->
+        </div>
+        
+        <div id="nd-box">
+            <p id="hardware">HARDWARE</p>
+            <div class="interrupt_section"></div>
+        </div>
+        
+        <div id="rd-box">
+            <p id="kmode">KERNEL MODE</p>
+        </div>
+    </div>
+
+    <div class="conatiner2">
+        <div id="cpu">
+            <p id="mycpu">Control processing unit</p>
+            <div class="cpu_details"></div>
+        </div>
+        <div id="memory">
+            <p id="mymemory">Memory</p>
+        </div>
+        <div id="TrapHandlers">
+            <p id="myTrapHandlers">Trap Handlers</p>
+        </div>
+        <div id="codeMenu">
+            <p id="mycodeMenu">Code Menu</p>
+        </div>
+    </div>
+    <!-- <script src="user_process_A.js"></script> -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="load_A.js"></script>
+    <!-- <script src="umode_controls.js"></script> -->
+</body>
+
+</html>
